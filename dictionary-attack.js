@@ -13,7 +13,14 @@ function init() {
 window.onload = init;
 
 /* ADD YOUR CODE BELOW */
-
 function checkPassword() {
-
+  var pw = document.getElementById("pw").value;
+  //for (var i = 0; i < wordsList.length; i++)
+  if (pw == wordsList) {
+  //if (wordsList.indexOf("pw") >= 0) {
+  //if (pw.includes(wordsList[i]))
+      alert ("That is a weak password.");
+  }  else  {
+      alert ("That is a strong password.")
+  }
 }
