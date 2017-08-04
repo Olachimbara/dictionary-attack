@@ -18,7 +18,7 @@ function checkPassword() {
   for (var i = 0; i < wordsList.length; i++)
   if (wordsList.indexOf("pw") >= 0) {
     if (pw == wordsList) {
-      if (pw.includes(wordsList[i]))
+      // if (pw.includes(wordsList[i]))
         alert ("That is a weak password.");
   }   else  {
         alert ("That is a strong password.")
