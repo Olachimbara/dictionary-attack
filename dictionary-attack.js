@@ -15,12 +15,13 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 function checkPassword() {
   var pw = document.getElementById("pw").value;
-  for (var i = 0; i < wordsList.length; i++)
-  if (wordsList.indexOf("pw") >= 0) {
-    if (pw == wordsList) {
+  for (var i = 0; i < wordsList.length; i++) {
+  // if (wordsList.indexOf("pw") >= 0) {
+    if (pw == wordsList[i]) {
       // if (pw.includes(wordsList[i]))
         alert ("That is a weak password.");
-  }   else  {
+      }else  {
         alert ("That is a strong password.")
+    }
   }
 }
