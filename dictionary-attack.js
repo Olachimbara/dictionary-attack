@@ -21,16 +21,14 @@ function checkPassword() {
   for (var i = 0; i < wordsList.length; i++) { // looping through the entire wordlist to check to see if pw has a match
     
     if (pw == wordsList[i]) {  // checks to see if pw matches wordsList[i], if it does, runs code below 
+      
       alert ("That is a weak password."); // tells user the password is weak
       break; // breaks out of for loop
       
       } // to close if statement 
     
-    else  {
-        alert ("That is a strong password.")
-      
-    } // to close else statement 
-    
   } // to close for loop
+  
+  alert ("That is a strong password.")
   
 } // to close function 
